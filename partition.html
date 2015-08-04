@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Balance Sheet Hierachy</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="d3.min.js"></script> 
 <script src="accounts.js"></script>
@@ -49,17 +49,14 @@ svg {
 <body>
 
 <div class="container">
-		<div class="row">
-			<div class="columns twelve">
-				<h1 id="heading">Amazon - 2014</h1>
-			</div>
-		</div>
 	<div class="row">
 		<div class="four columns">
 			<h3>Description</h3>
 			<p>Light blue represents Assets. Orange represents Liabilities. Dark blue represents Stockholder's Equity. Inner rings represent the top-most categories (Assets, Liabilities, and Stockholder's Equity). Middle rings represent sub-categories such as current assets and long-term liabilities. The outmost rings represent individual accounts.</p>
+			<p>Use the slider at the bottom to change the year. Notice how the relative makeup changes over time. One of the most striking changes is the large increase in Stockholder's Equity and current assets during 2008-2009 and subsequent decrease around 2011.</p>
 		</div>
 		<div class="eight columns">
+			<h2 id="heading">Amazon - 2006</h2>
 			<div id="graph"></div>
 			<div id="slider"></div>
 		</div>
